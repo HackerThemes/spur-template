@@ -1,0 +1,16 @@
+{
+  "name": "spur",
+  "version": "0.1.0",
+  "description": "Admin template based on Bootstrap 4",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "admin",
+    "theme"
+  ],
+  "author": "Alexander Rechsteiner",
+  "license": "MIT"
+}
