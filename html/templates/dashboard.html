@@ -1,0 +1,15 @@
+{% extends "html/templates/base.html" %}
+
+{% block main %}
+
+<div class="dash">
+    {% include "html/snippets/navigation.html" %}
+
+    {%block content %}
+    <h1>this would be the default content area</h1>
+    {% endblock %}
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% macro navItem(id, url)%}
+<a href="{{url}}" class="dash-nav-item {% if page_id == id %} active{% endif %}">{{url}}</a>
+{% endmacro %}
+
+<nav class="dash-nav">
+    {{navItem("index", "index.html")}}
+    {{navItem("dashboard", "dashboard.html")}}
+    {{navItem("content", "content.html")}}
+</nav>
