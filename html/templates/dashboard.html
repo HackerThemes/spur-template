@@ -3,13 +3,21 @@
 {% block main %}
 
 <div class="dash">
-    {% include "html/snippets/navigation.html" %}
+    <div class="dash-nav">
+        {% include "html/snippets/navigation.html" %}
+    </div>
 
-    {%block content %}
-    <h1>this would be the default content area</h1>
-    {% endblock %}
+    <div class="dash-app">
+        <header class="dash-toolbar">
+            here is the search and stuff
+        </header>
 
+        <main class="dash-content">
+            {%block content %}
+            <h1>Content Area</h1>
+            {% endblock %}
+        </main>
+    </div>
 </div>
-
 
 {% endblock %}

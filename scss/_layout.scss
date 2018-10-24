@@ -1,0 +1,96 @@
+$logo-color: #FFD300;
+
+.dash {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dash-nav {
+  min-width: 218px;
+
+  header {
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    color: $body-color;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.dash-nav-logo {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  i.fas {
+    color: $logo-color;
+    font-size: 27px;
+    margin-right: 10px;
+  }
+}
+
+.dash-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-nav-item {
+  min-height: 56px;
+  padding: 16px;
+
+  &:hover {
+    background: rgba(darkblue, .2);
+  }
+}
+
+.dash-nav-dropdown {
+  display: flex;
+  flex-direction: column;
+
+  &.show {
+    background: rgba(darkblue, .1);
+
+    > .dash-nav-dropdown-menu {
+      display: flex;
+    }
+
+    .dash-nav-dropdown {
+      &.show {
+        background: none;
+      }
+    }
+  }
+}
+
+.dash-nav-dropdown-menu {
+  display: none;
+  flex-direction: column;
+
+  > .dash-nav-dropdown {
+    .dash-nav-dropdown-menu {
+      .dash-nav-dropdown-item {
+        padding-left: 48px;
+      }
+    }
+  }
+}
+
+.dash-nav-dropdown-item {
+  min-height: 40px;
+  padding: 8px 32px;
+
+  &:hover {
+    background: rgba(darkblue, .2);
+  }
+}
+
+

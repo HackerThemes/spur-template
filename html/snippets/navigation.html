@@ -2,8 +2,46 @@
 <a href="{{url}}" class="dash-nav-item {% if page_id == id %} active{% endif %}">{{url}}</a>
 {% endmacro %}
 
-<nav class="dash-nav">
-    {{navItem("index", "index.html")}}
-    {{navItem("dashboard", "dashboard.html")}}
-    {{navItem("content", "content.html")}}
+<header>
+    <a href="#!" class="dash-nav-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
+</header>
+
+<nav class="dash-nav-list">
+    <a href="#!" class="dash-nav-item">
+        Dashboard
+    </a>
+    <a href="#!" class="dash-nav-item">
+        Inbox
+    </a>
+    <a href="#!" class="dash-nav-item">
+        Settings
+    </a>
+
+    <div class="dash-nav-dropdown show">
+        <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">Dropdown</a>
+
+        <div class="dash-nav-dropdown-menu">
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+
+            <div class="dash-nav-dropdown show">
+                <a href="#!" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Dropdown</a>
+
+                <div class="dash-nav-dropdown-menu">
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </nav>
+<!--<nav class="dash-nav-list">-->
+    <!--{{navItem("index", "index.html")}}-->
+    <!--{{navItem("dashboard", "dashboard.html")}}-->
+    <!--{{navItem("content", "content.html")}}-->
+<!--</nav>-->
