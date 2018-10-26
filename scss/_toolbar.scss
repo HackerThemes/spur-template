@@ -1,0 +1,43 @@
+$toolbar-bg: #F3F3F3;
+
+.dash-toolbar {
+  min-height: 84px;
+  background-color: $toolbar-bg;
+  display: flex;
+  align-items: center;
+  padding: 8px 27px;
+}
+
+.tools {
+  margin-left: auto;
+}
+
+.searchbox {
+}
+
+.searchbox-input {
+  border: none;
+  background-color: $toolbar-bg;
+  //background-color: fuchsia;
+  height: 50px;
+  width: 400px;
+  padding: 8px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.searchbox-submit {
+  border: none;
+  background: none;
+  padding: 20px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

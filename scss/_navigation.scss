@@ -1,0 +1,121 @@
+.dash-nav {
+  min-width: 218px;
+
+  header {
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    color: $body-color;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.dash-nav-logo {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  i.fas {
+    color: $logo-color;
+    font-size: 27px;
+    margin-right: 10px;
+  }
+}
+
+.dash-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-nav-item {
+  min-height: 56px;
+  padding: 8px 20px 8px 64px;
+  display: flex;
+  align-items: center;
+
+  i {
+    width: 32px;
+    font-size: 19px;
+    margin-left: -36px;
+  }
+
+  &:hover {
+    background: rgba(darkblue, .2);
+  }
+}
+
+.dash-nav-dropdown {
+  display: flex;
+  flex-direction: column;
+
+  &.show {
+    background: rgba(darkblue, .1);
+
+    > .dash-nav-dropdown-toggle {
+      font-weight: bold;
+
+      &:after {
+        transform: none;
+      }
+    }
+
+    > .dash-nav-dropdown-menu {
+      display: flex;
+    }
+
+    .dash-nav-dropdown {
+      &.show {
+        background: none;
+      }
+    }
+  }
+}
+
+.dash-nav-dropdown-toggle {
+  &:after {
+    content: "";
+    margin-left: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba($body-color, .8);
+    transform: rotate(90deg);
+  }
+}
+
+.dash-nav-dropdown-menu {
+  display: none;
+  flex-direction: column;
+
+  > .dash-nav-dropdown {
+    .dash-nav-dropdown-menu {
+      .dash-nav-dropdown-item {
+        padding-left: 87px;
+      }
+    }
+  }
+}
+
+.dash-nav-dropdown-item {
+  min-height: 40px;
+  padding: 8px 20px 8px 64px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: rgba(darkblue, .2);
+  }
+}
+
+
