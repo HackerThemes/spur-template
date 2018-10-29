@@ -1,3 +1,6 @@
+$dash-nav-dark-color: #fff;
+$dash-nav-dark-hover-bg: rgba(#fff, .04);
+
 .dash-nav {
   min-width: 218px;
 
@@ -11,8 +14,16 @@
   a {
     color: $body-color;
 
+
     &:hover {
       text-decoration: none;
+    }
+  }
+
+  &.dash-nav-dark {
+    background-color: #181F2C;
+    a {
+      color: $dash-nav-dark-color;
     }
   }
 }
@@ -49,7 +60,9 @@
   }
 
   &:hover {
-    background: rgba(darkblue, .2);
+    .dash-nav-dark & {
+      background: $dash-nav-dark-hover-bg;
+    }
   }
 }
 
@@ -58,7 +71,9 @@
   flex-direction: column;
 
   &.show {
-    background: rgba(darkblue, .1);
+    .dash-nav-dark & {
+      background: $dash-nav-dark-hover-bg;
+    }
 
     > .dash-nav-dropdown-toggle {
       font-weight: bold;
@@ -91,6 +106,10 @@
     border-right: 5px solid transparent;
     border-top: 5px solid rgba($body-color, .8);
     transform: rotate(90deg);
+
+    .dash-nav-dark & {
+      border-top-color: rgba($dash-nav-dark-color, .72);
+    }
   }
 }
 
@@ -114,7 +133,7 @@
   align-items: center;
 
   &:hover {
-    background: rgba(darkblue, .2);
+    background: $dash-nav-dark-hover-bg;
   }
 }
 

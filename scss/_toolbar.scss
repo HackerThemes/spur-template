@@ -10,10 +10,42 @@ $toolbar-bg: #F3F3F3;
 
 .tools {
   margin-left: auto;
+  display: flex;
+
+  a {
+    color: $body-color;
+  }
+}
+
+.tools-item {
+  margin-left: 41px;
+  position: relative;
+
+  i {
+    font-size: 20px;
+  }
+
+  .tools-item-count {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-style: normal;
+    font-size: 11px;
+    background: #FF5A00;
+    color: #fff;
+  }
 }
 
 .searchbox {
 }
+
+$searchbox-input-placeholder: #8b8b8b !default;
 
 .searchbox-input {
   border: none;
@@ -21,7 +53,11 @@ $toolbar-bg: #F3F3F3;
   //background-color: fuchsia;
   height: 50px;
   width: 400px;
-  padding: 8px;
+  padding: 8px 8px 8px 0;
+
+  &::placeholder {
+    color: $searchbox-input-placeholder;
+  }
 
   &:focus {
     outline: none;
@@ -32,6 +68,7 @@ $toolbar-bg: #F3F3F3;
   border: none;
   background: none;
   padding: 20px;
+  color: $searchbox-input-placeholder;
 
   &:focus {
     outline: none;
