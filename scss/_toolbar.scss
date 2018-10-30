@@ -6,54 +6,74 @@ $toolbar-bg: #F3F3F3;
   display: flex;
   align-items: center;
   padding: 8px 27px;
-}
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 218px;
 
-.tools {
-  margin-left: auto;
-  display: flex;
-
-  a {
-    color: $body-color;
+  @include media-breakpoint-down(xs) {
+    //padding: 8px 84px 8px 16px;
   }
 }
 
-.tools-item {
-  margin-left: 41px;
-  position: relative;
+.menu-toggle {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $body-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $body-color;
+  }
 
   i {
     font-size: 20px;
   }
-
-  .tools-item-count {
-    width: 15px;
-    height: 15px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    font-style: normal;
-    font-size: 11px;
-    background: #FF5A00;
-    color: #fff;
-  }
-}
-
-.searchbox {
 }
 
 $searchbox-input-placeholder: #8b8b8b !default;
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.searchbox-toggle {
+  display: none;
+  color: $body-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: flex;
+  }
+
+}
 
 .searchbox-input {
   border: none;
   background-color: $toolbar-bg;
   //background-color: fuchsia;
   height: 50px;
-  width: 400px;
+  //width: 400px;
   padding: 8px 8px 8px 0;
+  flex-grow: 2;
+  width: 100px;
 
   &::placeholder {
     color: $searchbox-input-placeholder;
@@ -76,5 +96,45 @@ $searchbox-input-placeholder: #8b8b8b !default;
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+
+
+.tools {
+  margin-left: auto;
+  display: flex;
+
+  a {
+    color: $body-color;
+  }
+}
+
+.tools-item {
+  margin-left: 41px;
+  position: relative;
+
+  i {
+    font-size: 20px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .tools-item-count {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-style: normal;
+    font-size: 11px;
+    background: #FF5A00;
+    color: #fff;
   }
 }

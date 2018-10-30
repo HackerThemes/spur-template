@@ -1,8 +1,23 @@
 $dash-nav-dark-color: #fff;
 $dash-nav-dark-hover-bg: rgba(#fff, .04);
+$dash-nav-dark-bg: #181F2C;
 
 .dash-nav {
   min-width: 218px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 
   header {
     height: 84px;
@@ -14,14 +29,13 @@ $dash-nav-dark-hover-bg: rgba(#fff, .04);
   a {
     color: $body-color;
 
-
     &:hover {
       text-decoration: none;
     }
   }
 
   &.dash-nav-dark {
-    background-color: #181F2C;
+    background-color: $dash-nav-dark-bg;
     a {
       color: $dash-nav-dark-color;
     }
