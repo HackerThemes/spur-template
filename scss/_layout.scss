@@ -9,8 +9,16 @@ $logo-color: #FFD300;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
+
   margin-top: 84px;
-  margin-left: 218px;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: 218px;
+
+    .dash-compact & {
+      margin-left: 0;
+    }
+  }
 }
 
 .dash-content {

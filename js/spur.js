@@ -5,4 +5,10 @@ $(document).ready(function(){
             .find(".dash-nav-dropdown")
             .removeClass("show");
     });
+
+    $(".menu-toggle").click(function(){
+        $(".dash").toggleClass("dash-compact");
+
+    })
+
 });

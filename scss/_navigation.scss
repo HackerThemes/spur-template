@@ -10,6 +10,10 @@ $dash-nav-dark-bg: #181F2C;
   bottom: 0;
   overflow: auto;
 
+  .dash-compact & {
+    display: none;
+  }
+
   &::-webkit-scrollbar {
     width: 0;
     background: transparent;

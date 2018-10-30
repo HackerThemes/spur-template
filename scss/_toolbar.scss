@@ -1,22 +1,7 @@
 $toolbar-bg: #F3F3F3;
 
-.dash-toolbar {
-  min-height: 84px;
-  background-color: $toolbar-bg;
-  display: flex;
-  align-items: center;
-  padding: 8px 27px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 218px;
-
-  @include media-breakpoint-down(xs) {
-    //padding: 8px 84px 8px 16px;
-  }
-}
-
-.menu-toggle {
+%toolbar-icon {
+  position: relative;
   width: 42px;
   height: 42px;
   display: flex;
@@ -36,6 +21,51 @@ $toolbar-bg: #F3F3F3;
   }
 }
 
+%icon-notification-counter {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  font-style: normal;
+  font-size: 11px;
+  background: #FF5A00;
+  color: #fff;
+}
+
+
+.dash-toolbar {
+  min-height: 84px;
+  background-color: $toolbar-bg;
+  display: flex;
+  align-items: center;
+  padding: 8px 27px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  @include media-breakpoint-up(lg) {
+    left: 218px;
+
+    .dash-compact & {
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    //padding: 8px 84px 8px 16px;
+  }
+}
+
+.menu-toggle {
+  @extend %toolbar-icon;
+}
+
 $searchbox-input-placeholder: #8b8b8b !default;
 
 .searchbox {
@@ -49,6 +79,7 @@ $searchbox-input-placeholder: #8b8b8b !default;
 }
 
 .searchbox-toggle {
+  @extend %toolbar-icon;
   display: none;
   color: $body-color;
 
@@ -71,7 +102,7 @@ $searchbox-input-placeholder: #8b8b8b !default;
   //background-color: fuchsia;
   height: 50px;
   //width: 400px;
-  padding: 8px 8px 8px 0;
+  padding: 8px 8px 11px 4px;
   flex-grow: 2;
   width: 100px;
 
@@ -85,10 +116,11 @@ $searchbox-input-placeholder: #8b8b8b !default;
 }
 
 .searchbox-submit {
+  @extend %toolbar-icon;
   border: none;
   background: none;
-  padding: 20px;
-  color: $searchbox-input-placeholder;
+  //color: $searchbox-input-placeholder;
+  padding: 0;
 
   &:focus {
     outline: none;
@@ -98,8 +130,6 @@ $searchbox-input-placeholder: #8b8b8b !default;
     cursor: pointer;
   }
 }
-
-
 
 .tools {
   margin-left: auto;
@@ -111,30 +141,15 @@ $searchbox-input-placeholder: #8b8b8b !default;
 }
 
 .tools-item {
-  margin-left: 41px;
-  position: relative;
+  @extend %toolbar-icon;
 
-  i {
-    font-size: 20px;
-  }
-
-  &:first-child {
-    margin-left: 0;
-  }
+  //margin-left: 41px;
+  //
+  //&:first-child {
+  //  margin-left: 0;
+  //}
 
   .tools-item-count {
-    width: 15px;
-    height: 15px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    font-style: normal;
-    font-size: 11px;
-    background: #FF5A00;
-    color: #fff;
+    @extend %icon-notification-counter;
   }
 }
