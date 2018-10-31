@@ -21,6 +21,17 @@ $dash-nav-dark-bg: #181F2C;
 
   @include media-breakpoint-down(md) {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+
+    &.mobile-show {
+      display: block;
+
+    }
   }
 
   header {
