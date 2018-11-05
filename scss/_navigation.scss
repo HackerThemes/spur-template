@@ -26,7 +26,7 @@ $dash-nav-dark-bg: #181F2C;
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 9999;
+    z-index: 1070;
 
     &.mobile-show {
       display: block;
@@ -35,10 +35,28 @@ $dash-nav-dark-bg: #181F2C;
   }
 
   header {
-    height: 84px;
+    min-height: 84px;
+    padding: 8px 27px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .menu-toggle {
+      display: none;
+      margin-right: auto;
+
+      @include media-breakpoint-down(md) {
+        display: flex;
+      }
+    }
+
+    .dash-nav-logo {
+      margin-right: auto;
+      padding-right: 42px; // this equalizes the menu-toggle on the left
+    }
+
+
+
   }
 
   a {
@@ -78,14 +96,14 @@ $dash-nav-dark-bg: #181F2C;
 
 .dash-nav-item {
   min-height: 56px;
-  padding: 8px 20px 8px 64px;
+  padding: 8px 20px 8px 70px;
   display: flex;
   align-items: center;
 
   i {
-    width: 32px;
+    width: 36px;
     font-size: 19px;
-    margin-left: -36px;
+    margin-left: -40px;
   }
 
   &:hover {
@@ -157,7 +175,7 @@ $dash-nav-dark-bg: #181F2C;
 
 .dash-nav-dropdown-item {
   min-height: 40px;
-  padding: 8px 20px 8px 64px;
+  padding: 8px 20px 8px 70px;
   display: flex;
   align-items: center;
 

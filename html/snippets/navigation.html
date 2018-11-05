@@ -3,27 +3,27 @@
 {% endmacro %}
 
 <header>
-    <a href="#!" class="dash-nav-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
     <a href="#!" class="menu-toggle">
         <i class="fas fa-bars"></i>
     </a>
+    <a href="#!" class="dash-nav-logo"><i class="fas fa-bolt"></i> <span>Spur</span></a>
 </header>
 
 <nav class="dash-nav-list">
-    <a href="#!" class="dash-nav-item">
+    <a href="index.html" class="dash-nav-item">
         <i class="fas fa-home"></i>
         Dashboard
     </a>
-    <a href="#!" class="dash-nav-item">
+    <a href="content.html" class="dash-nav-item {% if page_id == 'content' %} active{% endif %}">
         <i class="fas fa-inbox"></i>
-        Inbox
+        Content
     </a>
     <a href="#!" class="dash-nav-item">
         <i class="fas fa-cog"></i>
         Settings
     </a>
 
-    <div class="dash-nav-dropdown show">
+    <div class="dash-nav-dropdown">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
             <i class="fas fa-list-ul"></i>
             Dropdown
@@ -37,7 +37,7 @@
             <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
             <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
 
-            <div class="dash-nav-dropdown show">
+            <div class="dash-nav-dropdown">
                 <a href="#!" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Dropdown</a>
 
                 <div class="dash-nav-dropdown-menu">
@@ -48,6 +48,8 @@
                 </div>
             </div>
 
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
         </div>
     </div>
 </nav>

@@ -48,6 +48,7 @@ $toolbar-bg: #F3F3F3;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1000;
 
   @include media-breakpoint-up(lg) {
     left: 218px;
@@ -75,6 +76,18 @@ $searchbox-input-placeholder: #8b8b8b !default;
 
   @include media-breakpoint-down(sm) {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: $toolbar-bg;
+    min-height: 84px;
+    z-index: 1071;
+    padding: 8px 27px;
+
+    &.show {
+      display: flex;
+    }
   }
 }
 
@@ -121,6 +134,10 @@ $searchbox-input-placeholder: #8b8b8b !default;
   background: none;
   //color: $searchbox-input-placeholder;
   padding: 0;
+
+  @include media-breakpoint-down(sm) {
+    order: 9;
+  }
 
   &:focus {
     outline: none;

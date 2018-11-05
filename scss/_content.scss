@@ -1,0 +1,30 @@
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 33px;
+  font-weight: normal;
+}
+
+h3 {
+  margin-bottom: 13px;
+}
+
+.dash-title {
+  margin-bottom: 30px;
+}
+
+.content-anchor {
+  &::before {
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    visibility: hidden;
+    content: "";
+  }
+}
+
+.content-anchor-link {
+  color: #292829;
+  opacity: .46;
+  font-size: 19px;
+  margin-left: 7px;
+}
