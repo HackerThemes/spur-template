@@ -13,9 +13,16 @@
         </header>
 
         <main class="dash-content">
-            {%block content %}
-            <h1>Content Area</h1>
-            {% endblock %}
+            <div class="container-fluid">
+                <div class="row">
+                    {%block content %}
+                    <div class="col-12">
+                        <h1>Content Area</h1>
+                    </div>
+                    {% endblock %}
+                </div>
+            </div>
+
         </main>
     </div>
 </div>

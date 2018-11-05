@@ -1,0 +1,14 @@
+.stats {
+
+}
+
+@mixin stats-variant($background) {
+  color: color-yiq($background);
+  background: $background;
+}
+
+@each $color, $value in $theme-colors {
+  .stats-#{$color} {
+    @include stats-variant($value);
+  }
+}
