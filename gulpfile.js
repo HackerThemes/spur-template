@@ -65,7 +65,7 @@ gulp.task('build-js', function(){
 
 gulp.task('watch', ['build-theme', 'build-html', 'build-js'], function() {
     gulp.watch(['scss/*.scss'], ['build-theme']);
-    gulp.watch(['html/*.html', 'html/templates/*.html', 'html/includes/*.html', 'html/includes/stats/*.html'], ['build-html']);
+    gulp.watch(['html/*.html', 'html/templates/*.html', 'html/includes/*.html', 'html/includes/widget/*.html', 'html/includes/stats/*.html'], ['build-html']);
     gulp.watch(['js/*.js'], ['build-js']);
 });
 

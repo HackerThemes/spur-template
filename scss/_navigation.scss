@@ -147,7 +147,7 @@ $dash-nav-dark-bg: #181F2C;
   &:after {
     content: "";
     margin-left: auto;
-    display: block;
+    display: inline-block;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
