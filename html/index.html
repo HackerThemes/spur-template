@@ -1,22 +1,23 @@
 {% extends "html/templates/dashboard.html" %}
 
 {% block content %}
-
-<div class="col-lg-4 stats stats-danger">
-    <h3 class="stats-title">
-        Revenue
-    </h3>
-
-    <div class="stats-icon">
-        <i class="fas fa-search"></i>
+<div class="row dash-row">
+    <div class="col-xl-4">
+        {% include "html/includes/stats/stats-signups.html" %}
     </div>
 
-    <div class="stats-data">
-        $25,541
+    <div class="col-xl-4">
+        {% include "html/includes/stats/stats-revenue.html" %}
     </div>
 
-    <div class="stats-change">
-        +17.5% from last month
+    <div class="col-xl-4">
+        {% include "html/includes/stats/stats-tickets.html" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        hi
     </div>
 </div>
 

@@ -4,25 +4,25 @@
 
 <div class="dash">
     <div class="dash-nav dash-nav-dark">
-        {% include "html/snippets/navigation.html" %}
+        {% include "html/includes/navigation.html" %}
     </div>
 
     <div class="dash-app">
         <header class="dash-toolbar">
-            {% include "html/snippets/toolbar.html" %}
+            {% include "html/includes/toolbar.html" %}
         </header>
 
         <main class="dash-content">
             <div class="container-fluid">
+                {%block content %}
                 <div class="row">
-                    {%block content %}
                     <div class="col-12">
                         <h1>Content Area</h1>
                     </div>
-                    {% endblock %}
-                </div>
-            </div>
 
+                </div>
+                {% endblock %}
+            </div>
         </main>
     </div>
 </div>

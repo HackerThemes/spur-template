@@ -1,5 +1,56 @@
 .stats {
+  padding: 18px 23px;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 0 5px rgba(#000, .25);
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+  margin-bottom: 30px;
+}
 
+.stats-content {
+  display: flex;
+  margin-top: auto;
+  align-items: flex-end;
+}
+
+.stats-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.stats-icon {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+.stats-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+.stats-number {
+  font-size: 33px;
+  line-height: 33px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.stats-change {
+  margin-top: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.stats-percentage {
+  opacity: 1;
+}
+
+.stats-timeframe {
+  opacity: .5;
 }
 
 @mixin stats-variant($background) {

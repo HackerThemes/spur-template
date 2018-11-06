@@ -1,0 +1,21 @@
+<div class="stats {% block class %}stats-success {% endblock %}">
+    <h3 class="stats-title">
+        {% block title %}Revenue{% endblock %}
+    </h3>
+
+    <div class="stats-content">
+        <div class="stats-icon">
+            <i class="fas fa-cart-arrow-down"></i>
+        </div>
+
+        <div class="stats-data">
+            <div class="stats-number">{% block number %}$25,541{% endblock %}</div>
+            {% block change %}
+            <div class="stats-change">
+                <span class="stats-percentage">{% block percentage %}+17.5%{% endblock %}</span>
+                <span class="stats-timeframe">{% block timeframe %}from last month{% endblock %}</span>
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+</div>

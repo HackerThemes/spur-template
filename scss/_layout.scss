@@ -24,10 +24,14 @@ $logo-color: #FFD300;
 .dash-content {
   background: #E9EDF4;
   flex-grow: 2;
-  padding: 42px;
+  padding: 40px;
 
   > .container-fluid {
     padding: 0;
   }
 }
 
+
+.dash-row {
+  margin-bottom: 30px;
+}
