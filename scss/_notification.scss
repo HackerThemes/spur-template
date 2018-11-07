@@ -1,0 +1,45 @@
+.notifications {
+  margin-top: -8px;
+}
+
+.notification {
+  display: flex;
+  padding: 8px 0;
+}
+
+.notification-link {
+  color: $body-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $body-color;
+  }
+}
+
+.notification-icon {
+  //margin-right: 20px;
+  width: 40px;
+}
+
+.notification-time {
+  margin-left: auto;
+  opacity: .8;
+}
+
+.notifications-show-all {
+  margin-top: 8px;
+  margin-left: 40px;
+
+  a {
+    color: $body-color;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $body-color;
+    }
+
+  }
+}

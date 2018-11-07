@@ -2,6 +2,7 @@
   border: 1px solid #D3D3D3;
   background: #fff;
   min-height: 220px;
+  margin-bottom: 30px;
 }
 
 .widget-head {
@@ -47,6 +48,18 @@
 .widget-body {
   padding: 24px 32px;
 
+  @include media-breakpoint-down(sm) {
+    padding: 12px 18px;
+  }
 }
+
+.widget-body-chart {
+  @include media-breakpoint-down(sm) {
+    padding: 12px 5px;
+  }
+  position: relative;
+  max-width: 99%;
+}
+
 
 
