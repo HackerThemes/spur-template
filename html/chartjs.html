@@ -1,0 +1,33 @@
+{% extends "html/templates/dashboard.html" %}
+
+{% block content %}
+
+<h1 class="dash-title">Chart.js</h1>
+
+<p class="mb-5">
+    These charts are made using the Chart.js library. You can find more examples and ways to configure
+    the charts in the <a href="http://chartjs.org" target="_blank">Chart.js Documentation</a>.
+</p>
+
+<div class="row">
+    <div class="col-xl-6">
+        {% include "html/includes/widget/widget-chartjs-two-bars.html" %}
+    </div>
+
+    <div class="col-xl-6">
+        {% include "html/includes/widget/widget-chartjs-line.html" %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-6">
+        {% include "html/includes/widget/widget-chartjs-doughnut.html" %}
+    </div>
+
+    <div class="col-xl-6">
+        {% include "html/includes/widget/widget-chartjs-polar.html" %}
+    </div>
+</div>
+
+
+{% endblock %}

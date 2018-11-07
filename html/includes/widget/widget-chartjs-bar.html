@@ -1,20 +1,20 @@
 {% extends './widget.html' %}
 
+{% block title %}Bar Chart{% endblock %}
 {% block bodyClass %}widget-body-chart{% endblock %}
 {% block body %}
-<canvas id="myChart"></canvas>
+<canvas id="spurChartjsBar"></canvas>
 <script>
-var ctx = document.getElementById("myChart").getContext('2d');
+var ctx = document.getElementById("spurChartjsBar").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple"],
+        labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         datasets: [{
-            label: 'Value',
+            label: 'Blue',
             data: [12, 19, 3, 5, 2],
-            backgroundColor: window.chartColors.blue,
-            borderColor: window.chartColors.blue,
-            borderWidth: 2
+            backgroundColor: window.chartColors.primary,
+            borderColor: 'transparent'
         }]
     },
     options: {
