@@ -50,13 +50,10 @@ $dash-nav-dark-bg: #181F2C;
       }
     }
 
-    .dash-nav-logo {
+    .spur-logo {
       margin-right: auto;
       padding-right: 42px; // this equalizes the menu-toggle on the left
     }
-
-
-
   }
 
   a {
@@ -75,14 +72,22 @@ $dash-nav-dark-bg: #181F2C;
   }
 }
 
-.dash-nav-logo {
+.spur-logo {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 20px;
   display: flex;
+  color: $body-color;
   align-items: center;
 
-  i.fas {
+  &:focus,
+  &:active,
+  &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  i {
     color: $logo-color;
     font-size: 27px;
     margin-right: 10px;

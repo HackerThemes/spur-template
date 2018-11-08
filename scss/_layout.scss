@@ -1,5 +1,9 @@
 $logo-color: #FFD300;
 
+body {
+  background: #E9EDF4;
+}
+
 .dash {
   display: flex;
   min-height: 100vh;
@@ -22,7 +26,6 @@ $logo-color: #FFD300;
 }
 
 .dash-content {
-  background: #E9EDF4;
   flex-grow: 2;
   padding: 25px;
 
@@ -36,7 +39,32 @@ $logo-color: #FFD300;
   }
 }
 
-
 .dash-row {
   margin-bottom: 30px;
+}
+
+.form-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+
+  .spur-logo {
+    margin-bottom: 60px;
+    opacity: .9;
+
+    i {
+      color: $body-color;
+    }
+  }
+}
+
+.form-screen-card {
+  max-width: 360px;
+
+  @include media-breakpoint-up(xl) {
+    min-width: 360px;
+  }
+
 }
