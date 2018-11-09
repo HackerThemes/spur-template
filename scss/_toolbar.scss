@@ -51,7 +51,7 @@ $toolbar-bg: #F3F3F3;
   z-index: 1000;
 
   @include media-breakpoint-up(lg) {
-    left: 218px;
+    left: 238px;
 
     .dash-compact & {
       left: 0;

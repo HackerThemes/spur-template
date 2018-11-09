@@ -13,6 +13,10 @@ $(document).ready(function(){
             .toggleClass("show")
             .find(".dash-nav-dropdown")
             .removeClass("show");
+
+        $(this).parent()
+            .siblings()
+            .removeClass("show");
     });
 
     $(".menu-toggle").click(function(){

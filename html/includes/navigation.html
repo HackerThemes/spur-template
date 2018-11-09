@@ -14,10 +14,6 @@
         <i class="fas fa-home"></i>
         Dashboard
     </a>
-    <a href="content.html" class="dash-nav-item {% if page_id == 'content' %} active{% endif %}">
-        <i class="fas fa-inbox"></i>
-        Content
-    </a>
 
     <div class="dash-nav-dropdown">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
@@ -30,10 +26,34 @@
         </div>
     </div>
 
-    <a href="login.html" class="dash-nav-item">
-        <i class="fas fa-key"></i>
-        Login
-    </a>
+    <div class="dash-nav-dropdown">
+        <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
+            <i class="fas fa-cube"></i>
+            Components
+        </a>
+
+        <div class="dash-nav-dropdown-menu">
+            <a href="buttons.html" class="dash-nav-dropdown-item">Buttons</a>
+            <a href="forms.html" class="dash-nav-dropdown-item">Forms</a>
+            <a href="#!" class="dash-nav-dropdown-item">Icons</a>
+            <a href="#!" class="dash-nav-dropdown-item">Notifications</a>
+            <a href="#!" class="dash-nav-dropdown-item">Tables</a>
+            <a href="#!" class="dash-nav-dropdown-item">Typography</a>
+            <a href="#!" class="dash-nav-dropdown-item">Widgets</a>
+        </div>
+    </div>
+
+    <div class="dash-nav-dropdown">
+        <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
+            <i class="fas fa-file"></i>
+            Layouts
+        </a>
+
+        <div class="dash-nav-dropdown-menu">
+            <a href="content.html" class="dash-nav-dropdown-item">Content</a>
+            <a href="login.html" class="dash-nav-dropdown-item">Login</a>
+        </div>
+    </div>
 
     <div class="dash-nav-dropdown">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
@@ -62,6 +82,18 @@
 
             <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
             <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+        </div>
+    </div>
+
+    <div class="dash-nav-dropdown">
+        <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
+            <i class="fas fa-info"></i>
+            About
+        </a>
+
+        <div class="dash-nav-dropdown-menu">
+            <a href="{{globals.github}}" target="_blank" class="dash-nav-dropdown-item">GitHub</a>
+            <a href="http://hackerthemes.com" target="_blank" class="dash-nav-dropdown-item">HackerThemes</a>
         </div>
     </div>
 </nav>
