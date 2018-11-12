@@ -60,11 +60,27 @@ body {
   }
 }
 
-.form-screen-card {
+.account-dialog {
   max-width: 360px;
 
   @include media-breakpoint-up(xl) {
     min-width: 360px;
   }
+}
 
+.account-dialog-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.account-dialog-link {
+  margin-left: 15px;
+  font-size: 14px;
+  color: rgba($body-color, .8);
+
+  &:hover {
+    color: $body-color;
+    text-decoration: none;
+  }
 }

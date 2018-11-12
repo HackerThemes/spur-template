@@ -1,0 +1,46 @@
+// Styles that are more for the demo than anything else
+
+.spur-demo-buttons {
+  .btn {
+    margin-bottom: 8px;
+  }
+}
+
+.spur-demo-icons {
+  display: flex;
+  flex-flow: row wrap;
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    height: 50px;
+    padding: 8px 8px 8px 0;
+
+    &:hover {
+      //background: #fff;
+    }
+
+    i {
+      font-size: 30px;
+      //height: 40px;
+      width: 40px;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 13px;
+      opacity: .9;
+    }
+  }
+}
+
+
+.spur-demo-progress {
+  .progress {
+    margin-bottom: 5px;
+  }
+
+
+}

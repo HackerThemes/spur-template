@@ -15,7 +15,7 @@
         Dashboard
     </a>
 
-    <div class="dash-nav-dropdown">
+    <div class="dash-nav-dropdown{% if group_id == 'charts' %} show{%endif%}">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
             <i class="fas fa-chart-bar"></i>
             Charts
@@ -26,24 +26,24 @@
         </div>
     </div>
 
-    <div class="dash-nav-dropdown">
+    <div class="dash-nav-dropdown {% if group_id == 'components' %} show{%endif%}">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
             <i class="fas fa-cube"></i>
             Components
         </a>
 
         <div class="dash-nav-dropdown-menu">
-            <a href="buttons.html" class="dash-nav-dropdown-item">Buttons</a>
+            <a href="userinterface.html" class="dash-nav-dropdown-item">User Interface</a>
             <a href="forms.html" class="dash-nav-dropdown-item">Forms</a>
-            <a href="#!" class="dash-nav-dropdown-item">Icons</a>
+            <a href="icons.html" class="dash-nav-dropdown-item">Icons</a>
             <a href="#!" class="dash-nav-dropdown-item">Notifications</a>
             <a href="#!" class="dash-nav-dropdown-item">Tables</a>
             <a href="#!" class="dash-nav-dropdown-item">Typography</a>
-            <a href="#!" class="dash-nav-dropdown-item">Widgets</a>
+            <!--<a href="#!" class="dash-nav-dropdown-item">Widgets</a>-->
         </div>
     </div>
 
-    <div class="dash-nav-dropdown">
+    <div class="dash-nav-dropdown{% if group_id == 'layouts' %} show{%endif%}">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
             <i class="fas fa-file"></i>
             Layouts
@@ -51,7 +51,8 @@
 
         <div class="dash-nav-dropdown-menu">
             <a href="content.html" class="dash-nav-dropdown-item">Content</a>
-            <a href="login.html" class="dash-nav-dropdown-item">Login</a>
+            <a href="login.html" class="dash-nav-dropdown-item">Log in</a>
+            <a href="signup.html" class="dash-nav-dropdown-item">Sign up</a>
         </div>
     </div>
 

@@ -1,20 +1,23 @@
 .notifications {
-  margin-top: -8px;
+  margin: -8px -32px;
 }
 
 .notification {
   display: flex;
-  padding: 8px 0;
-}
-
-.notification-link {
+  flex-direction: row;
+  padding: 8px 16px;
   color: $body-color;
 
   &:hover,
   &:focus,
   &:active {
     color: $body-color;
+    text-decoration: none;
+    background-color: #F0F1F7;
   }
+}
+
+.notification-text {
 }
 
 .notification-icon {
@@ -29,7 +32,7 @@
 
 .notifications-show-all {
   margin-top: 8px;
-  margin-left: 40px;
+  margin-left: 56px;
 
   a {
     color: $body-color;

@@ -13,6 +13,9 @@
   <script src="js/chart-js-config.js"></script>
 
   <title>Spur - A Bootstrap Admin Template</title>
+
+  <!-- can be removed for production -->
+  <link rel="stylesheet" href="css/demo.css">
 </head>
 
 <body>
@@ -53,7 +56,7 @@
         </a>
 
         <div class="dash-nav-dropdown-menu">
-            <a href="buttons.html" class="dash-nav-dropdown-item">Buttons</a>
+            <a href="userinterface.html" class="dash-nav-dropdown-item">User Interface</a>
             <a href="forms.html" class="dash-nav-dropdown-item">Forms</a>
             <a href="icons.html" class="dash-nav-dropdown-item">Icons</a>
             <a href="#!" class="dash-nav-dropdown-item">Notifications</a>
@@ -71,7 +74,8 @@
 
         <div class="dash-nav-dropdown-menu">
             <a href="content.html" class="dash-nav-dropdown-item">Content</a>
-            <a href="login.html" class="dash-nav-dropdown-item">Login</a>
+            <a href="login.html" class="dash-nav-dropdown-item">Log in</a>
+            <a href="signup.html" class="dash-nav-dropdown-item">Sign up</a>
         </div>
     </div>
 
@@ -173,9 +177,121 @@
             <div class="container-fluid">
                 
 
-<h1 class="dash-title">Buttons</h1>
+<h1 class="dash-title">User Interface</h1>
 
 <div class="row">
+    <div class="col-xl-6">
+        <div class="widget">
+    <div class="widget-head">
+        <div class="widget-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="widget-title">
+            Alerts
+        </div>
+
+        
+    </div>
+    <div class="widget-body ">
+        
+<div class="spur-demo-alerts">
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+    </div>
+    <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+        <div class="widget">
+    <div class="widget-head">
+        <div class="widget-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="widget-title">
+            Badges
+        </div>
+
+        
+    </div>
+    <div class="widget-body ">
+        
+<div class="spur-demo-badges">
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+</div>
+
+<div class="spur-demo-badges mt-3">
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+</div>
+
+
+    </div>
+</div>
+
+        <div class="widget">
+    <div class="widget-head">
+        <div class="widget-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="widget-title">
+            Progress
+        </div>
+
+        
+    </div>
+    <div class="widget-body ">
+        
+<div class="spur-demo-progress">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+    </div>
+
     <div class="col-xl-6">
         <div class="widget">
     <div class="widget-head">
@@ -190,7 +306,6 @@
     </div>
     <div class="widget-body ">
         
-<h4>Default Buttons</h4>
 
 <div class="spur-demo-buttons">
 <button type="button" class="btn btn-primary">Primary</button>
@@ -203,9 +318,7 @@
 <button type="button" class="btn btn-dark">Dark</button>
 </div>
 
-<h4 class="mt-4">Outline Buttons</h4>
-
-<div class="spur-demo-buttons">
+<div class="spur-demo-buttons mt-3">
 <button type="button" class="btn btn-outline-primary">Primary</button>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-outline-success">Success</button>
@@ -216,21 +329,26 @@
 <button type="button" class="btn btn-outline-dark">Dark</button>
 </div>
 
-<h4 class="mt-4">Sizes</h4>
-
-<div class="spur-demo-buttons">
+<div class="spur-demo-buttons mt-3">
 <button type="button" class="btn btn-primary btn-lg">Large button</button>
 <button type="button" class="btn btn-primary">Normal button</button>
 <button type="button" class="btn btn-primary btn-sm">Small button</button>
+<div class="btn-group ml-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+</div>
+</div>
+
+<div class="spur-demo-buttons mt-3">
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
 </div>
 
 
     </div>
 </div>
 
-    </div>
-
-    <div class="col-xl-6">
         <div class="widget">
     <div class="widget-head">
         <div class="widget-icon">
@@ -244,8 +362,6 @@
     </div>
     <div class="widget-body ">
         
-<h4>Icon Buttons</h4>
-
 <div class="spur-demo-buttons">
 <a href="#!" class="btn btn-primary"> <i class="fas fa-plus"></i> </a>
 <a href="#!" class="btn btn-secondary"> <i class="fas fa-list"></i> </a>
@@ -257,9 +373,7 @@
 <a href="#!" class="btn btn-dark"> <i class="fas fa-bell"></i> </a>
 </div>
 
-<h4 class="mt-4">Large Icon Buttons</h4>
-
-<div class="spur-demo-buttons">
+<div class="spur-demo-buttons mt-3">
 <a href="#!" class="btn btn-primary btn-lg"> <i class="fas fa-plus"></i> </a>
 <a href="#!" class="btn btn-secondary btn-lg"> <i class="fas fa-list"></i> </a>
 <a href="#!" class="btn btn-success btn-lg"> <i class="fas fa-check"></i> </a>
@@ -325,6 +439,7 @@
 </div>
 
     </div>
+
 </div>
 
 <div class="row">

@@ -1,0 +1,57 @@
+/*!
+ * Spur - An admin template based on Bootstrap 4
+ * Version v0.1.0
+ * Copyright 2016 - 2018 Alexander Rechsteiner
+ * https://hackerthemes.com
+ * 
+ * Parts of this code were created by the Bootstrap team
+ * and are available under MIT license at https://getbootstrap.com.
+ * Bootstrap version: 4.1.3
+ */
+
+.spur-demo-buttons .btn {
+  margin-bottom: 8px; }
+
+.spur-demo-icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .spur-demo-icons .icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 250px;
+    height: 50px;
+    padding: 8px 8px 8px 0; }
+    .spur-demo-icons .icon i {
+      font-size: 30px;
+      width: 40px;
+      margin-right: 10px; }
+    .spur-demo-icons .icon span {
+      font-size: 13px;
+      opacity: .9; }
+
+.spur-demo-progress .progress {
+  margin-bottom: 5px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlbW8uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUVBO0VBRUksbUJBQWtCLEVBQ25COztBQUdIO0VBQ0UscUJBQWE7RUFBYixzQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLCtCQUFtQjtFQUFuQiw4QkFBbUI7RUFBbkIsNEJBQW1CO01BQW5CLHdCQUFtQjtVQUFuQixvQkFBbUIsRUEwQnBCO0VBNUJEO0lBS0kscUJBQWE7SUFBYixzQkFBYTtJQUFiLHFCQUFhO0lBQWIsY0FBYTtJQUNiLCtCQUFtQjtJQUFuQiw4QkFBbUI7SUFBbkIsNEJBQW1CO1FBQW5CLHdCQUFtQjtZQUFuQixvQkFBbUI7SUFDbkIsMEJBQW1CO0lBQW5CLDRCQUFtQjtRQUFuQix1QkFBbUI7WUFBbkIsb0JBQW1CO0lBQ25CLHdCQUEyQjtJQUEzQixvQ0FBMkI7UUFBM0IscUJBQTJCO1lBQTNCLDRCQUEyQjtJQUMzQixhQUFZO0lBQ1osYUFBWTtJQUNaLHVCQUFzQixFQWdCdkI7SUEzQkg7TUFrQk0sZ0JBQWU7TUFFZixZQUFXO01BQ1gsbUJBQWtCLEVBQ25CO0lBdEJMO01Bd0JNLGdCQUFlO01BQ2YsWUFBVyxFQUNaOztBQUtMO0VBRUksbUJBQWtCLEVBQ25CIiwiZmlsZSI6ImRlbW8uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gU3R5bGVzIHRoYXQgYXJlIG1vcmUgZm9yIHRoZSBkZW1vIHRoYW4gYW55dGhpbmcgZWxzZVxuXG4uc3B1ci1kZW1vLWJ1dHRvbnMge1xuICAuYnRuIHtcbiAgICBtYXJnaW4tYm90dG9tOiA4cHg7XG4gIH1cbn1cblxuLnNwdXItZGVtby1pY29ucyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZmxvdzogcm93IHdyYXA7XG5cbiAgLmljb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgICB3aWR0aDogMjUwcHg7XG4gICAgaGVpZ2h0OiA1MHB4O1xuICAgIHBhZGRpbmc6IDhweCA4cHggOHB4IDA7XG5cbiAgICAmOmhvdmVyIHtcbiAgICAgIC8vYmFja2dyb3VuZDogI2ZmZjtcbiAgICB9XG5cbiAgICBpIHtcbiAgICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICAgIC8vaGVpZ2h0OiA0MHB4O1xuICAgICAgd2lkdGg6IDQwcHg7XG4gICAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG4gICAgfVxuICAgIHNwYW4ge1xuICAgICAgZm9udC1zaXplOiAxM3B4O1xuICAgICAgb3BhY2l0eTogLjk7XG4gICAgfVxuICB9XG59XG5cblxuLnNwdXItZGVtby1wcm9ncmVzcyB7XG4gIC5wcm9ncmVzcyB7XG4gICAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICB9XG5cblxufVxuIl19 */

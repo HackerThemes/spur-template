@@ -3,8 +3,8 @@
 {% block menu %}{% endblock %}
 {% block title %}Buttons{% endblock %}
 {% block body %}
-<h4>Default Buttons</h4>
 
+<div class="spur-demo-buttons">
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
@@ -13,9 +13,9 @@
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-light">Light</button>
 <button type="button" class="btn btn-dark">Dark</button>
+</div>
 
-<h4 class="mt-4">Outline Buttons</h4>
-
+<div class="spur-demo-buttons mt-3">
 <button type="button" class="btn btn-outline-primary">Primary</button>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-outline-success">Success</button>
@@ -24,10 +24,22 @@
 <button type="button" class="btn btn-outline-info">Info</button>
 <button type="button" class="btn btn-outline-light">Light</button>
 <button type="button" class="btn btn-outline-dark">Dark</button>
+</div>
 
-<h4 class="mt-4">Sizes</h4>
+<div class="spur-demo-buttons mt-3">
 <button type="button" class="btn btn-primary btn-lg">Large button</button>
 <button type="button" class="btn btn-primary">Normal button</button>
 <button type="button" class="btn btn-primary btn-sm">Small button</button>
+<div class="btn-group ml-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+</div>
+</div>
+
+<div class="spur-demo-buttons mt-3">
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+</div>
 
 {% endblock %}

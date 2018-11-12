@@ -1,0 +1,40 @@
+{% extends "html/templates/dashboard.html" %}
+{% import "html/includes/data/fontawesome.html" as fontawesome %}
+{% set page_id = "icons" %}
+{% set group_id = "components" %}
+
+
+{% block content %}
+<h1 class="dash-title">Font Awesome</h1>
+
+<h3>Solid</h3>
+<div class="spur-demo-icons">
+{% for icon in fontawesome.solid %}
+<div class="icon">
+    <i class="{{icon}}"></i>
+    <span>{{icon}}</span>
+</div>
+{% endfor %}
+</div>
+
+<h3 class="mt-5">Regular</h3>
+<div class="spur-demo-icons">
+    {% for icon in fontawesome.regular %}
+    <div class="icon">
+        <i class="{{icon}}"></i>
+        <span>{{icon}}</span>
+    </div>
+    {% endfor %}
+</div>
+
+<h3 class="mt-5">Brands</h3>
+<div class="spur-demo-icons">
+    {% for icon in fontawesome.brands %}
+    <div class="icon">
+        <i class="{{icon}}"></i>
+        <span>{{icon}}</span>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

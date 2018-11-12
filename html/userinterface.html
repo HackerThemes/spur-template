@@ -1,18 +1,24 @@
 {% extends "html/templates/dashboard.html" %}
+{% set page_id = "userinterface" %}
+{% set group_id = "components" %}
 
 {% block content %}
 
-<h1 class="dash-title">Buttons</h1>
+<h1 class="dash-title">User Interface</h1>
 
 <div class="row">
     <div class="col-xl-6">
-        {% include "html/includes/widget/widget-buttons.html" %}
+        {% include "html/includes/widget/widget-alerts.html" %}
+        {% include "html/includes/widget/widget-badges.html" %}
+        {% include "html/includes/widget/widget-progress.html" %}
     </div>
 
     <div class="col-xl-6">
+        {% include "html/includes/widget/widget-buttons.html" %}
         {% include "html/includes/widget/widget-buttons-icons.html" %}
         {% include "html/includes/widget/widget-buttons-social.html" %}
     </div>
+
 </div>
 
 <div class="row">

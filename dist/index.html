@@ -13,6 +13,9 @@
   <script src="js/chart-js-config.js"></script>
 
   <title>Spur - A Bootstrap Admin Template</title>
+
+  <!-- can be removed for production -->
+  <link rel="stylesheet" href="css/demo.css">
 </head>
 
 <body>
@@ -46,20 +49,20 @@
         </div>
     </div>
 
-    <div class="dash-nav-dropdown">
+    <div class="dash-nav-dropdown ">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
             <i class="fas fa-cube"></i>
             Components
         </a>
 
         <div class="dash-nav-dropdown-menu">
-            <a href="buttons.html" class="dash-nav-dropdown-item">Buttons</a>
+            <a href="userinterface.html" class="dash-nav-dropdown-item">User Interface</a>
             <a href="forms.html" class="dash-nav-dropdown-item">Forms</a>
-            <a href="#!" class="dash-nav-dropdown-item">Icons</a>
+            <a href="icons.html" class="dash-nav-dropdown-item">Icons</a>
             <a href="#!" class="dash-nav-dropdown-item">Notifications</a>
             <a href="#!" class="dash-nav-dropdown-item">Tables</a>
             <a href="#!" class="dash-nav-dropdown-item">Typography</a>
-            <a href="#!" class="dash-nav-dropdown-item">Widgets</a>
+            <!--<a href="#!" class="dash-nav-dropdown-item">Widgets</a>-->
         </div>
     </div>
 
@@ -71,7 +74,8 @@
 
         <div class="dash-nav-dropdown-menu">
             <a href="content.html" class="dash-nav-dropdown-item">Content</a>
-            <a href="login.html" class="dash-nav-dropdown-item">Login</a>
+            <a href="login.html" class="dash-nav-dropdown-item">Log in</a>
+            <a href="signup.html" class="dash-nav-dropdown-item">Sign up</a>
         </div>
     </div>
 
@@ -351,37 +355,30 @@ var myChart = new Chart(ctx, {
     <div class="widget-body ">
         
 <div class="notifications">
-    <div class="notification">
+    <a href="#!" class="notification">
         <div class="notification-icon">
             <i class="fas fa-inbox"></i>
         </div>
-        <a href="#!" class="notification-link">New comment</a>
+        <div class="notification-text">New comment</div>
         <span class="notification-time">21 days ago</span>
-    </div>
+    </a>
 
-    <div class="notification">
+    <a href="#!" class="notification">
         <div class="notification-icon">
             <i class="fas fa-inbox"></i>
         </div>
-        <a href="#!" class="notification-link">New comment</a>
+        <div class="notification-text">New comment</div>
         <span class="notification-time">21 days ago</span>
-    </div>
+    </a>
 
-    <div class="notification">
+    <a href="#!" class="notification">
         <div class="notification-icon">
             <i class="fas fa-inbox"></i>
         </div>
-        <a href="#!" class="notification-link">New comment</a>
+        <div class="notification-text">New comment</div>
         <span class="notification-time">21 days ago</span>
-    </div>
+    </a>
 
-    <div class="notification">
-        <div class="notification-icon">
-            <i class="fas fa-inbox"></i>
-        </div>
-        <a href="#!" class="notification-link">New comment</a>
-        <span class="notification-time">21 days ago</span>
-    </div>
 
     <div class="notifications-show-all">
         <a href="#!">Show all</a>
