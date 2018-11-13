@@ -1,37 +1,46 @@
-.widget {
+.spur-card {
   border: 1px solid #D3D3D3;
   background: #fff;
   //min-height: 220px;
   margin-bottom: 30px;
+
+  .card-header {
+    min-height: 57px;
+    background-color: #F0F1F7;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+  }
+
+  .card-body {
+    padding: 24px 32px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 12px 18px;
+    }
+  }
 }
 
-.widget-head {
-  min-height: 57px;
-  background-color: #F0F1F7;
-  display: flex;
-  align-items: center;
-  padding: 8px 32px;
-}
-
-.widget-icon {
+.spur-card-icon {
   margin-right: 20px;
 }
 
-.widget-title {
+.spur-card-title {
   font-weight: bold;
 }
 
-.widget-menu {
+.spur-card-menu {
   margin-left: auto;
 }
 
-.widget-menu-link {
+.spur-card-menu-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
   margin-right: -15px;
+
 
   &::after {
     content: "";
@@ -43,20 +52,19 @@
     border-right: 5px solid transparent;
     border-top: 5px solid rgba($body-color, .8);
   }
-}
 
-.widget-body {
-  padding: 24px 32px;
-
-  @include media-breakpoint-down(sm) {
-    padding: 12px 18px;
+  .text-white & {
+    &::after {
+      border-top-color: #fff;
+    }
   }
 }
 
-.widget-body-chart {
+.spur-card-body-chart {
   @include media-breakpoint-down(sm) {
     padding: 12px 5px;
   }
+
   position: relative;
   max-width: 99%;
 }

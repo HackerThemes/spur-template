@@ -1,14 +1,12 @@
-{% extends './widget.html' %}
+{% extends '../card-for-chart.html' %}
 
-{% block menu %}{% endblock %}
-{% block title %}Polar Area{% endblock %}
-{% block bodyClass %}widget-body-chart{% endblock %}
+{% block title %}Doughnut{% endblock %}
 {% block body %}
-<canvas id="spurChartjsPolar"></canvas>
+<canvas id="spurChartjsDougnut"></canvas>
 <script>
-    var ctx = document.getElementById("spurChartjsPolar").getContext('2d');
+    var ctx = document.getElementById("spurChartjsDougnut").getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'polarArea',
+        type: 'doughnut',
         data: {
             labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
             datasets: [{
@@ -21,12 +19,13 @@
                     window.chartColors.superwarning,
                     window.chartColors.danger,
                 ],
-                borderColor: '#fff'
+                borderColor: '#fff',
+                fill: false
             }]
         },
         options: {
             legend: {
-                display: true
+                display: false
             }
         }
     });

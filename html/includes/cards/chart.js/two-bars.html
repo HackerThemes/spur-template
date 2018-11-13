@@ -1,11 +1,10 @@
-{% extends './widget.html' %}
+{% extends '../card-for-chart.html' %}
 
-{% block title %}Bar Chart{% endblock %}
-{% block bodyClass %}widget-body-chart{% endblock %}
+{% block title %}Two bars{% endblock %}
 {% block body %}
-<canvas id="spurChartjsBar"></canvas>
+<canvas id="spurChartjsTwoBars"></canvas>
 <script>
-var ctx = document.getElementById("spurChartjsBar").getContext('2d');
+var ctx = document.getElementById("spurChartjsTwoBars").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -15,6 +14,11 @@ var myChart = new Chart(ctx, {
             data: [12, 19, 3, 5, 2],
             backgroundColor: window.chartColors.primary,
             borderColor: 'transparent'
+        }, {
+            label: 'Red',
+            data: [4, 12, 11, 2, 14],
+            backgroundColor: window.chartColors.danger,
+            borderColor: 'transparent'
         }]
     },
     options: {
@@ -22,6 +26,7 @@ var myChart = new Chart(ctx, {
             display: false
         },
         scales: {
+
             yAxes: [{
                 ticks: {
                     beginAtZero:true

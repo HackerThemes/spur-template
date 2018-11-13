@@ -1,0 +1,88 @@
+{% extends "html/templates/dashboard.html" %}
+{% set page_id = "cards" %}
+{% set group_id = "components" %}
+
+{% macro card(title='A card', headerclass='', bodyclass='') %}
+        <div class="card spur-card">
+            <div class="card-header {{headerclass}}">
+                <div class="spur-card-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="spur-card-title">
+                    {{ title }}
+                </div>
+
+                <div class="spur-card-menu">
+                    <div class="dropdown show">
+                        <a class="spur-card-menu-link"
+                           href="#"
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body {{bodyclass}}">
+                Just a card that can be used to display some content, graphs, tables, and so on.
+            </div>
+        </div>
+{% endmacro %}
+
+{% block content %}
+
+<h1 class="dash-title">Cards</h1>
+
+<p class="mb-5">Cards are simply Bootstrap cards with some added features for the dashboard environment.</p>
+
+<div class="row">
+    <div class="col-lg-6">
+        {{card()}}
+    </div>
+
+    <div class="col-lg-6">
+        {{card('Primary Header', 'bg-primary text-white')}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        {{card('Success', 'bg-success text-white')}}
+    </div>
+
+    <div class="col-lg-6">
+        {{card('Danger Header', 'bg-danger text-white')}}
+    </div>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-lg-6">
+        {{card('Warning Card', 'bg-warning text-dark', 'bg-warning text-dark')}}
+    </div>
+
+    <div class="col-lg-6">
+        {{card('Dark Card', 'bg-dark text-white', 'bg-dark text-white')}}
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        {{card('Secondary Card', 'bg-secondary text-white', 'bg-secondary text-white')}}
+    </div>
+
+    <div class="col-lg-6">
+        {{card('Info Card', 'bg-info text-white', 'bg-info text-white')}}
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
+            {% block icon %}<i class="fas fa-chart-bar"></i>{% endblock %}
+        </div>
+        <div class="spur-card-title">
+            {% block title %}Ricksaw Chart{% endblock %}
+        </div>
+        {% block menu %}{% endblock %}
+    </div>
+    <div class="card-body {% block bodyClass %}{% endblock %}">
+        {% block body %}
+        hello I'm a card
+        {% endblock %}
+    </div>
+</div>

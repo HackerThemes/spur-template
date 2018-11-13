@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -56,13 +57,24 @@
         </a>
 
         <div class="dash-nav-dropdown-menu">
-            <a href="userinterface.html" class="dash-nav-dropdown-item">User Interface</a>
+            <a href="alerts.html" class="dash-nav-dropdown-item">Alerts</a>
+            <a href="cards.html" class="dash-nav-dropdown-item">Cards</a>
             <a href="forms.html" class="dash-nav-dropdown-item">Forms</a>
             <a href="icons.html" class="dash-nav-dropdown-item">Icons</a>
-            <a href="#!" class="dash-nav-dropdown-item">Notifications</a>
-            <a href="#!" class="dash-nav-dropdown-item">Tables</a>
-            <a href="#!" class="dash-nav-dropdown-item">Typography</a>
-            <!--<a href="#!" class="dash-nav-dropdown-item">Widgets</a>-->
+            <a href="tables.html" class="dash-nav-dropdown-item">Tables</a>
+            <div class="dash-nav-dropdown">
+                <a href="#!" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Tier 2 Menu</a>
+
+                <div class="dash-nav-dropdown-menu">
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
+                </div>
+            </div>
+            <a href="typography.html" class="dash-nav-dropdown-item">Typography</a>
+            <a href="userinterface.html" class="dash-nav-dropdown-item">User Interface</a>
+
         </div>
     </div>
 
@@ -76,36 +88,6 @@
             <a href="content.html" class="dash-nav-dropdown-item">Content</a>
             <a href="login.html" class="dash-nav-dropdown-item">Log in</a>
             <a href="signup.html" class="dash-nav-dropdown-item">Sign up</a>
-        </div>
-    </div>
-
-    <div class="dash-nav-dropdown">
-        <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle">
-            <i class="fas fa-list-ul"></i>
-            Dropdown
-        </a>
-
-        <div class="dash-nav-dropdown-menu">
-            <a href="#!" class="dash-nav-dropdown-item">
-                Sub item
-            </a>
-            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-
-            <div class="dash-nav-dropdown">
-                <a href="#!" class="dash-nav-dropdown-item dash-nav-dropdown-toggle">Dropdown</a>
-
-                <div class="dash-nav-dropdown-menu">
-                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-                    <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-                </div>
-            </div>
-
-            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
-            <a href="#!" class="dash-nav-dropdown-item">Sub item</a>
         </div>
     </div>
 
@@ -186,18 +168,35 @@
 
 <div class="row">
     <div class="col-xl-6">
-        <div class="widget">
-    <div class="widget-head">
-        <div class="widget-icon">
+        <div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
             <i class="fas fa-chart-bar"></i>
         </div>
-        <div class="widget-title">
+        <div class="spur-card-title">
             Two bars
         </div>
-
         
+<div class="spur-card-menu">
+    <div class="dropdown show">
+        <a class="spur-card-menu-link"
+           href="#"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
     </div>
-    <div class="widget-body widget-body-chart">
+</div>
+
+    </div>
+    <div class="card-body spur-card-body-chart">
         
 <canvas id="spurChartjsTwoBars"></canvas>
 <script>
@@ -241,18 +240,35 @@ var myChart = new Chart(ctx, {
     </div>
 
     <div class="col-xl-6">
-        <div class="widget">
-    <div class="widget-head">
-        <div class="widget-icon">
+        <div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
             <i class="fas fa-chart-bar"></i>
         </div>
-        <div class="widget-title">
+        <div class="spur-card-title">
             Line
         </div>
-
         
+<div class="spur-card-menu">
+    <div class="dropdown show">
+        <a class="spur-card-menu-link"
+           href="#"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
     </div>
-    <div class="widget-body widget-body-chart">
+</div>
+
+    </div>
+    <div class="card-body spur-card-body-chart">
         
 <canvas id="spurChartjsLine"></canvas>
 <script>
@@ -292,18 +308,35 @@ var myChart = new Chart(ctx, {
 
 <div class="row">
     <div class="col-xl-6">
-        <div class="widget">
-    <div class="widget-head">
-        <div class="widget-icon">
+        <div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
             <i class="fas fa-chart-bar"></i>
         </div>
-        <div class="widget-title">
+        <div class="spur-card-title">
             Doughnut
         </div>
-
         
+<div class="spur-card-menu">
+    <div class="dropdown show">
+        <a class="spur-card-menu-link"
+           href="#"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
     </div>
-    <div class="widget-body widget-body-chart">
+</div>
+
+    </div>
+    <div class="card-body spur-card-body-chart">
         
 <canvas id="spurChartjsDougnut"></canvas>
 <script>
@@ -341,18 +374,35 @@ var myChart = new Chart(ctx, {
     </div>
 
     <div class="col-xl-6">
-        <div class="widget">
-    <div class="widget-head">
-        <div class="widget-icon">
+        <div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
             <i class="fas fa-chart-bar"></i>
         </div>
-        <div class="widget-title">
+        <div class="spur-card-title">
             Polar Area
         </div>
-
         
+<div class="spur-card-menu">
+    <div class="dropdown show">
+        <a class="spur-card-menu-link"
+           href="#"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false">
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
     </div>
-    <div class="widget-body widget-body-chart">
+</div>
+
+    </div>
+    <div class="card-body spur-card-body-chart">
         
 <canvas id="spurChartjsPolar"></canvas>
 <script>
