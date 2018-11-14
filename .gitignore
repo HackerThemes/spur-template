@@ -1,5 +1,6 @@
 .sass-cache
 node_modules/
+package/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/

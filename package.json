@@ -1,8 +1,9 @@
 {
   "name": "Spur",
-  "version": "0.1.0",
+  "version": "1.0.0-alpha1",
   "description": "An admin template based on Bootstrap 4",
   "main": "index.html",
+  "repository": "https://github.com/HackerThemes/spur-admin",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
