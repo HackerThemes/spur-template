@@ -1,5 +1,5 @@
 {
-  "name": "spur-admin",
+  "name": "spur-template",
   "version": "1.0.0-alpha1",
   "description": "An admin template based on Bootstrap 4",
   "main": "index.html",
@@ -15,6 +15,10 @@
   "author": "Alexander Rechsteiner",
   "homepage": "https://hackerthemes.com",
   "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "scss/**/*"
+  ],
   "devDependencies": {
     "autoprefixer": "^9.2.1",
     "bootstrap": "4.1.3",
