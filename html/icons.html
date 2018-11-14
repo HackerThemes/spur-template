@@ -2,39 +2,69 @@
 {% import "html/includes/data/fontawesome.html" as fontawesome %}
 {% set page_id = "icons" %}
 {% set group_id = "components" %}
+{% set subgroup_id = "icons" %}
 
 
 {% block content %}
 <h1 class="dash-title">Font Awesome Icons</h1>
 
-<h3>Solid</h3>
-<div class="spur-demo-icons">
-{% for icon in fontawesome.solid %}
-<div class="icon">
-    <i class="{{icon}}"></i>
-    <span>{{icon}}</span>
-</div>
-{% endfor %}
+<div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-title">
+            Solid
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="spur-demo-icons">
+            {% for icon in fontawesome.solid %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
-<h3 class="mt-5">Regular</h3>
-<div class="spur-demo-icons">
-    {% for icon in fontawesome.regular %}
-    <div class="icon">
-        <i class="{{icon}}"></i>
-        <span>{{icon}}</span>
+<a class="content-anchor" id="regular-icons"></a>
+<div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-title">
+            Regular
+        </div>
     </div>
-    {% endfor %}
+
+    <div class="card-body">
+        <div class="spur-demo-icons">
+            {% for icon in fontawesome.regular %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
-<h3 class="mt-5">Brands</h3>
-<div class="spur-demo-icons">
-    {% for icon in fontawesome.brands %}
-    <div class="icon">
-        <i class="{{icon}}"></i>
-        <span>{{icon}}</span>
+<a class="content-anchor" id="brand-icons"></a>
+<div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-title">
+            Brands
+        </div>
     </div>
-    {% endfor %}
+
+    <div class="card-body">
+        <div class="spur-demo-icons">
+            {% for icon in fontawesome.brands %}
+            <div class="icon">
+                <i class="{{icon}}"></i>
+                <span>{{icon}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 {% endblock %}
