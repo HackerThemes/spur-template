@@ -1,5 +1,5 @@
 {
-  "name": "Spur",
+  "name": "spur-admin",
   "version": "1.0.0-alpha1",
   "description": "An admin template based on Bootstrap 4",
   "main": "index.html",
