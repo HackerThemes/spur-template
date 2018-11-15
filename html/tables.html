@@ -2,9 +2,72 @@
 {% set page_id = "tables" %}
 {% set group_id = "components" %}
 
+{% macro table(title='', class='', cardBodyClass='') %}
+
+<div class="card spur-card">
+    <div class="card-header">
+        <div class="spur-card-icon">
+            <i class="fas fa-table"></i>
+        </div>
+        <div class="spur-card-title">{{title}}</div>
+    </div>
+    <div class="card-body {{cardBodyClass}}">
+        <table class="table {{class}}">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% endmacro %}
+
 {% block content %}
 
 <h1 class="dash-title">Tables</h1>
+
+<div class="row">
+    <div class="col-lg-6">
+        {{table("Default table", "table-in-card")}}
+    </div>
+    <div class="col-lg-6">
+        {{table("Table with hover", "table-hover table-in-card")}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        {{table("Striped table", "table-striped table-in-card")}}
+    </div>
+    <div class="col-lg-6">
+        {{table("Dark table", "table-dark table-in-card", "card-body-with-dark-table")}}
+    </div>
+</div>
 
 
 {% endblock %}

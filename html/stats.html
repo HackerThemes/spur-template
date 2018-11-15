@@ -1,0 +1,60 @@
+{% extends "html/templates/dashboard.html" %}
+{% set page_id = "stats" %}
+{% set group_id = "components" %}
+
+
+{% macro stats(title='', class='stats-primary', icon='fas fa-cart-arrow-down', number='$100') %}
+<div class="stats {{class}}">
+    <h3 class="stats-title">
+        {{title}}
+    </h3>
+
+    <div class="stats-content">
+        <div class="stats-icon">
+            <i class="{{icon}}"></i>
+        </div>
+
+        <div class="stats-data">
+            <div class="stats-number">{{number}}</div>
+            <div class="stats-change">
+                <span class="stats-percentage">+17.5%</span>
+                <span class="stats-timeframe">from last month</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% block content %}
+
+<h1 class="dash-title">Stats</h1>
+
+
+<div class="row">
+    <div class="col-lg-4">
+        {{stats('Primary')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Secondary', 'stats-secondary')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Success', 'stats-success')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Info', 'stats-info')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Warning', 'stats-warning')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Danger', 'stats-danger')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Light', 'stats-light')}}
+    </div>
+    <div class="col-lg-4">
+        {{stats('Dark', 'stats-dark')}}
+    </div>
+</div>
+
+{% endblock %}
