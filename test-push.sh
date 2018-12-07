@@ -5,4 +5,5 @@ echo "Building Spur"
 gulp
 
 echo "Pushing to live"
-aws s3 sync dist/ s3://test-static-hackerthemes/spur/demo --delete
+rsync -a --delete dist/ wildmind@wildmind.ch:~/public_html/hackerthemes/test.hackerthemes.com/spur/demo
+rsync -a package/ wildmind@wildmind.ch:~/public_html/hackerthemes/test.hackerthemes.com/spur/package
