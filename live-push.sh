@@ -5,4 +5,5 @@ gulp
 
 echo "Pushing to live"
 
-echo "TODOOOO"
+rsync -a --delete dist/ wildmind@wildmind.ch:~/public_html/hackerthemes/hackerthemes.com/spur/demo
+rsync -a package/ wildmind@wildmind.ch:~/public_html/hackerthemes/hackerthemes.com/spur/package
