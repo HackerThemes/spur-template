@@ -1,10 +1,10 @@
 /*!
  * spur-template - An admin template based on Bootstrap 4
- * Version v1.0.0-alpha1
+ * Version v1.0.0-alpha2
  * Copyright 2016 - 2018 Alexander Rechsteiner
  * https://hackerthemes.com
  * 
  * Parts of this code were created by the Bootstrap team
  * and are available under MIT license at https://getbootstrap.com.
- * Bootstrap version: 4.1.3
+ * Bootstrap version: 4.2.1
  */.spur-demo-buttons .btn{margin-bottom:8px}.spur-demo-icons{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.spur-demo-icons .icon{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:250px;height:50px;padding:8px 8px 8px 0}.spur-demo-icons .icon i{font-size:30px;width:40px;margin-right:10px}.spur-demo-icons .icon span{font-size:13px;opacity:.9}.spur-demo-progress .progress{margin-bottom:5px}
