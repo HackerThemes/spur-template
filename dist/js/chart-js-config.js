@@ -1,7 +1,7 @@
 /*!
  * spur-template - An admin template based on Bootstrap 4
  * Version v1.0.0-alpha2
- * Copyright 2016 - 2018 Alexander Rechsteiner
+ * Copyright 2016 - 2019 Alexander Rechsteiner
  * https://hackerthemes.com
  */
 

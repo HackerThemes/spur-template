@@ -29,7 +29,7 @@ var jsBanner = [banner,
     ' */\n',
     ''].join('\n');
 
-gulp.task('build-theme', function() {
+function buildCss(){
     return gulp.src(['scss/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -49,25 +49,25 @@ gulp.task('build-theme', function() {
         .pipe(cleanCss())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist/css/'))
-});
+}
 
-gulp.task('build-html', function(){
-    gulp.src('html/*.html')
+function buildHtml() {
+    return gulp.src('html/*.html')
         .pipe(nunjucks())
         .pipe(gulp.dest('dist/'));
-});
+}
 
-gulp.task('build-js', function(){
-    gulp.src('js/*.js')
+function buildJs() {
+    return gulp.src('js/*.js')
         .pipe(header(jsBanner, { pkg : pkg } ))
         .pipe(gulp.dest('dist/js/'));
-});
+}
 
-gulp.task('watch', ['build-theme', 'build-html', 'build-js'], function() {
-    gulp.watch(['scss/*.scss'], ['build-theme']);
-    gulp.watch(['html/**/*.html'], ['build-html']);
-    gulp.watch(['js/*.js'], ['build-js']);
-});
+function watcher() {
+    gulp.watch(['scss/*.scss'], gulp.series(buildCss));
+    gulp.watch(['html/**/*.html'], gulp.series(buildHtml));
+    gulp.watch(['js/*.js'], gulp.series(buildJs));
+}
 
-gulp.task('default', ['build-theme', 'build-html', 'build-js'], function() {
-});
+exports.watch = gulp.series(buildCss, buildHtml, buildJs, watcher);
+exports.default = gulp.series(buildHtml, buildCss, buildJs);
