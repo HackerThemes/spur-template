@@ -29,9 +29,9 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-html-beautify": "^1.0.1"
   },
   "dependencies": {
-    "gulp-html-beautify": "^1.0.1"
   }
 }
