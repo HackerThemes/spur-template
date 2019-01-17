@@ -9,10 +9,14 @@ and components intended to make it easier for developers to build a pretty web a
 
 A live demo can be found here: https://hackerthemes.com/spur/demo/html/
 
-## Download
+## Download and instructions
 
 The entire template with all necessary assets is found in the `dist/` folder.
-To download, check the releases tab in this repository.
+Please find the download and detailed instructions at https://hackerthemes.com/bootstrap-templates/spur/.
+
+You can also install using npm:
+
+```npm install spur-template```
 
 ## Creators
 
