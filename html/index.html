@@ -1,27 +1,27 @@
-{% extends "html/templates/dashboard.html" %}
+{% extends "html/_layouts/dashboard.html" %}
 
 {% block content %}
 <div class="row dash-row">
     <div class="col-xl-4">
-        {% include "html/includes/stats/stats-signups.html" %}
+        {% include "html/_includes/stats/stats-signups.html" %}
     </div>
 
     <div class="col-xl-4">
-        {% include "html/includes/stats/stats.html" %}
+        {% include "html/_includes/stats/stats.html" %}
     </div>
 
     <div class="col-xl-4">
-        {% include "html/includes/stats/stats-tickets.html" %}
+        {% include "html/_includes/stats/stats-tickets.html" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-xl-6">
-        {% include "html/includes/cards/chart.js/bar.html" %}
+        {% include "html/_includes/cards/chart.js/bar.html" %}
     </div>
 
     <div class="col-xl-6">
-        {% include "html/includes/cards/misc/notifications.html" %}
+        {% include "html/_includes/cards/misc/notifications.html" %}
     </div>
 </div>
 

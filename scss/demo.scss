@@ -1,11 +1,5 @@
 // Styles that are more for the demo than anything else
 
-.spur-demo-buttons {
-  .btn {
-    margin-bottom: 8px;
-  }
-}
-
 .spur-demo-icons {
   display: flex;
   flex-flow: row wrap;
@@ -29,18 +23,10 @@
       width: 40px;
       margin-right: 10px;
     }
+
     span {
       font-size: 13px;
       opacity: .9;
     }
   }
-}
-
-
-.spur-demo-progress {
-  .progress {
-    margin-bottom: 5px;
-  }
-
-
 }

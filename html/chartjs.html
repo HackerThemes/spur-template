@@ -1,4 +1,4 @@
-{% extends "html/templates/dashboard.html" %}
+{% extends "html/_layouts/dashboard.html" %}
 {% set page_id = "chartjs" %}
 {% set group_id = "charts" %}
 
@@ -13,21 +13,21 @@
 
 <div class="row">
     <div class="col-xl-6">
-        {% include "html/includes/cards/chart.js/two-bars.html" %}
+        {% include "html/_includes/cards/chart.js/two-bars.html" %}
     </div>
 
     <div class="col-xl-6">
-        {% include "html/includes/cards/chart.js/line.html" %}
+        {% include "html/_includes/cards/chart.js/line.html" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-xl-6">
-        {% include "html/includes/cards/chart.js/doughnut.html" %}
+        {% include "html/_includes/cards/chart.js/doughnut.html" %}
     </div>
 
     <div class="col-xl-6">
-        {% include "html/includes/cards/chart.js/polar.html" %}
+        {% include "html/_includes/cards/chart.js/polar.html" %}
     </div>
 </div>
 
