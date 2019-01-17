@@ -56,7 +56,7 @@ function buildHtml() {
     return gulp.src('html/*.html')
         .pipe(nunjucks())
         .pipe(htmlbeautify({"preserve_newlines" : false, "max_preserve_newlines" : 1 }))
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/html/'));
 }
 
 function buildJs() {

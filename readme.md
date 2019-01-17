@@ -7,7 +7,7 @@ and components intended to make it easier for developers to build a pretty web a
 
 ## Live Demo
 
-A live demo can be found here: https://hackerthemes.com/spur/demo/
+A live demo can be found here: https://hackerthemes.com/spur/demo/html/
 
 ## Download
 
