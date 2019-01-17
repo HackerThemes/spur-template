@@ -3,37 +3,37 @@
 {% set group_id = "components" %}
 
 {% macro card(title='A card', headerclass='', bodyclass='') %}
-        <div class="card spur-card">
-            <div class="card-header {{headerclass}}">
-                <div class="spur-card-icon">
-                    <i class="fas fa-chart-bar"></i>
-                </div>
-                <div class="spur-card-title">
-                    {{ title }}
-                </div>
+<div class="card spur-card">
+    <div class="card-header {{headerclass}}">
+        <div class="spur-card-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="spur-card-title">
+            {{ title }}
+        </div>
 
-                <div class="spur-card-menu">
-                    <div class="dropdown show">
-                        <a class="spur-card-menu-link"
-                           href="#"
-                           role="button"
-                           data-toggle="dropdown"
-                           aria-haspopup="true"
-                           aria-expanded="false">
-                        </a>
+        <div class="spur-card-menu">
+            <div class="dropdown show">
+                <a class="spur-card-menu-link"
+                   href="#"
+                   role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false">
+                </a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </div>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-            </div>
-            <div class="card-body {{bodyclass}}">
-                Just a card that can be used to display some content, graphs, tables, and so on.
             </div>
         </div>
+    </div>
+    <div class="card-body {{bodyclass}}">
+        Just a card that can be used to display some content, graphs, tables, and so on.
+    </div>
+</div>
 {% endmacro %}
 
 {% block content %}
