@@ -1,6 +1,6 @@
 {
   "name": "spur-template",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-alpha2x",
   "description": "An admin template based on Bootstrap 4",
   "main": "index.html",
   "repository": "https://github.com/HackerThemes/spur-admin",
