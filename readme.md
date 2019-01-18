@@ -1,7 +1,5 @@
 # Spur - A Bootstrap Admin Template
 
-**Note: This repo is currently in development. Things will shift around, class names might change.**
-
 Spur is a simple dashboard template (aka admin template) based on the latest version of Bootstrap. It features layouts
 and components intended to make it easier for developers to build a pretty web application.
 

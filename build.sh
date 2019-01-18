@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Rebuild the dist folder
-#rm -rf dist/
-#gulp
+rm -rf dist/
+gulp
 
 PACKAGE_VERSION=$(cat package.json \
   | grep version \
