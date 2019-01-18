@@ -1,11 +1,15 @@
 .notifications {
   margin: -8px -32px;
+
+  @include media-breakpoint-down(sm) {
+    margin: -8px -18px;
+  }
 }
 
 .notification {
   display: flex;
   flex-direction: row;
-  padding: 8px 16px;
+  padding: 8px 32px;
   color: $body-color;
 
   &:hover,
@@ -22,7 +26,7 @@
 
 .notification-icon {
   //margin-right: 20px;
-  width: 40px;
+  width: 35px;
 }
 
 .notification-time {
@@ -32,7 +36,7 @@
 
 .notifications-show-all {
   margin-top: 8px;
-  margin-left: 56px;
+  margin-left: 67px;
 
   a {
     color: $body-color;
