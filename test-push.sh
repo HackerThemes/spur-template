@@ -2,7 +2,7 @@
 #!/bin/bash
 
 echo "Building Spur"
-gulp
+. build.sh
 
 echo "Pushing to test"
 
