@@ -22,7 +22,7 @@ var cssBanner = [banner,
     ' * ',
     ' * Parts of this code were created by the Bootstrap team',
     ' * and are available under MIT license at https://getbootstrap.com.',
-    ' * Bootstrap version: <%= pkg.devDependencies.bootstrap %>',
+    ' * Bootstrap version: <%= pkg.dependencies.bootstrap %>',
     ' */\n',
     ''].join('\n');
 
