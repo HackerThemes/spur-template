@@ -7,6 +7,7 @@ var gulp  = require('gulp'),
     nunjucks = require('gulp-nunjucks-render'),
     header = require('gulp-header'),
     htmlbeautify = require('gulp-html-beautify'),
+    touch = require('gulp-touch-fd'),
     autoprefixer = require('autoprefixer');
 
 // Variables for copyright header
@@ -56,7 +57,8 @@ function buildHtml() {
     return gulp.src('html/*.html')
         .pipe(nunjucks())
         .pipe(htmlbeautify({"preserve_newlines" : false, "max_preserve_newlines" : 1 }))
-        .pipe(gulp.dest('dist/html/'));
+        .pipe(gulp.dest('dist/html/'))
+        .pipe(touch());
 }
 
 function buildJs() {

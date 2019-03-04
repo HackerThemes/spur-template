@@ -31,3 +31,10 @@ You can also install using npm:
 ## Copyright and license
 
 Code and documentation copyright 2018 [HackerThemes](https://hacekrthemes.com) Code released under the [MIT License](https://opensource.org/licenses/MIT).
+
+
+## Changelog
+
+1.1.0: Upgrade to Bootstrap 4.3.1
+
+1.0.0: Initial Release
