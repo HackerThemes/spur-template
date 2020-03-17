@@ -35,6 +35,6 @@
     "popper.js": "^1.16.1"
   },
   "dependencies": {
-    "bootstrap": "4.3.1"
+    "bootstrap": "4.4.1"
   }
 }
